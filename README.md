@@ -1,6 +1,6 @@
 # CodePath CYB102 – Cybersecurity Labs & Projects
 
-This repository contains my completed labs and projects for **CodePath CYB102 (Introduction to Cybersecurity)**.  
+This repository contains my completed labs and projects for **CodePath CYB102 (Intermediate Cybersecurity)**.  
 Each unit includes a **lab** and a **project**, organized into separate folders.
 
 ---
