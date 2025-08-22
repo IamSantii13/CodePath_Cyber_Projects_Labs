@@ -25,13 +25,15 @@ In this lab, I explored Snort, a popular Network Intrusion Detection System (NID
     sudo docker images   # Verify pytbull-ng installed
    
 1. 💥 Generate Attacks with pytbull-ng
+   <img width="884" height="681" alt="pytbull_listen" src="https://github.com/user-attachments/assets/8aa6d8af-9f09-465a-b46d-3062fc06bc0f" />
+
     ```bash
    # Start victim container (note Host IP from output)
     sudo docker run --rm -it efigo/pytbull-ng -m victim  
 
    # Launch attacker container (replace <Host IP>)
     sudo docker run --rm -it efigo/pytbull-ng -m attacker -t <Host IP>
-2. ⚙️ Configure Snort Environment
+3. ⚙️ Configure Snort Environment
    ```bash
    # Create required folders
     sudo mkdir -p /usr/local/etc/rules
@@ -42,7 +44,7 @@ In this lab, I explored Snort, a popular Network Intrusion Detection System (NID
     # Create rules and blocklist files
     sudo touch /usr/local/etc/rules/local.rules
     sudo touch /usr/local/etc/lists/default.blocklist
-3.  📝 Write Initial ICMP Detection Rule
+4.  📝 Write Initial ICMP Detection Rule
      ```bash
     sudo vi /usr/local/etc/rules/local.rules
 
